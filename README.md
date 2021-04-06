@@ -7,14 +7,15 @@ Tools to dump and program FV-1 presets with 24LC32A eeprom.
 1x breadboard
 1x Ardiuno
 2x 4.7K pullup resitors
+1x push button
 
 ![arduino](res/arduino.jpg)
 
-Install the Sparkfun External EEPROM library (available in the library manager).
+Install the Sparkfun External EEPROM library and the Ace button library (available via the library manager).
 
 ## Dump presets
 
-Use the reader.ino project and open the serial monitor.
+Open the serial monitor and click on the button to dump the eeprom.
 Presets are output as C arrays.
 
 ```
@@ -39,7 +40,7 @@ writepreset(0, myeffect1, PRESETLEN);
 writepreset(0, myeffect2, PRESETLEN);
 ```
 
-Upload the project to the Arduino.
+Upload the project to the Arduino and press long the button.
 
 ## Links
 
